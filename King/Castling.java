@@ -4,7 +4,7 @@ import ChessGame.selPiece;
 import ChessGame.MainGame;
 
 public class Castling {
-    MainGame.Turn turn = selPiece.tempTurn;
+    MainGame.Turn turn = new selPiece().tempTurn;
     public void castle(char board[][], int row, int col) {
         if (turn == MainGame.Turn.White) {
             board[8 - row][col] = '♖';

@@ -12,7 +12,7 @@ public class MainGame {
         Black,
         White
     }
-    static Turn turn = Turn.White; // set default to white's turn 
+    public Turn turn = Turn.White; // set default to white's turn 
 
     static void pieceSetup() {
         // init white pawns to their places
@@ -56,11 +56,12 @@ public class MainGame {
     }
 
     public static void main (String[] args) {
+
         // init game
         pieceSetup();
         b.boardDisp(board);
         new fileRecord().clearFile();
-        new selPiece().select(turn, board);
+        new selPiece().select(new MainGame().turn, board);
 
 
         sc.close();

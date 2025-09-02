@@ -10,7 +10,7 @@ import ChessGame.King.*;
 import ChessGame.Queen.*;
 
 public class selPiece {
-    static public Turn tempTurn;
+    public Turn tempTurn;
     static Scanner sc = new Scanner(System.in);
     public void select(MainGame.Turn turn, char[][] board) {
             new fileRecord().record(board);;

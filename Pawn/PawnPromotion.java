@@ -7,7 +7,7 @@ import ChessGame.MainGame.Turn;
 import ChessGame.MainGame;
 
 public class PawnPromotion {
-    MainGame.Turn turn = selPiece.tempTurn;
+    MainGame.Turn turn = new selPiece().tempTurn;
     static Scanner sc = new Scanner(System.in);
     public void checkPromote(char board[][], int row, int col) {
 
