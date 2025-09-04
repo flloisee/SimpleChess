@@ -1,10 +1,9 @@
 package ChessGame;
-import ChessGame.MainGame.Turn;
 
-public class TeamMate {
+public class TeamMate extends MainGame {
     char white[] = {'♙', '♘', '♗', '♖', '♔', '♕', '·'};
     char black[] = {'♟', '♞', '♝', '♜', '♚', '♛', '·'};
-    MainGame.Turn turn = new selPiece().tempTurn;
+    Turn turn = new selPiece().tempTurn;
 
     // 0 = enemy, 1 = friend
     public int checkTeam(char piece) {
